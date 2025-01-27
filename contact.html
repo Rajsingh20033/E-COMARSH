@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#"><img src="Product_Zone-removebg-preview (2) (1).png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">about</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link " aria-current="page" href="contact.html">contact us</a>
+          </li>
+
+        </ul>
+
+
+        <form class="d-flex" role="search">
+
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+
+
+        </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Loginmodal">Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Signupmodal">Signup</button>
+
+        </div>
+      </div>
+
+  </nav>
+  <h1>contact us
+  </h1>
+  <div class="container">
+    
+    <form onsubmit="emailsend(); reset(); return false;">
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">First name</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>up</option>
+          <option>mp</option>
+          <option>delhi</option>
+          <option>mumbai</option>
+          <option>goa</option>
+        </select>
+
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit">submit</button>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+  <div class="b-example-divider"></div>
+
+
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2024 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis"
+              href="https://x.com/RSbroth69849366?t=ZpB-8q0BBO-IcJ-MDKJ81g&s=09"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis"
+              href="https://www.instagram.com/raj_thakur_2265?igsh=NWMyZDMyZm0wOWcy"><svg class="bi" width="24"
+                height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/share/12B6ufVHNfN/"><svg
+                class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+
+        </ul>
+
+      </div>
+    </footer>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+
+</body>
+
+</html>

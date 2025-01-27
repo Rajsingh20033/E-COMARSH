@@ -1,0 +1,47 @@
+.r{
+
+    animation: raj;
+    animation-duration: 5s;
+    animation-delay: 1s;
+ 
+   
+
+}
+.a{
+
+    animation: ra;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    
+   
+
+}
+
+@keyframes raj {
+
+
+    0% {
+
+        background-color: lightcyan;
+        
+      
+       rotate: 45deg;
+        
+
+    }
+
+}
+@keyframes ra {
+
+
+    0% {
+
+
+        
+        background-color: lightcyan;
+        rotate: 45deg;
+        
+
+    }
+
+}
